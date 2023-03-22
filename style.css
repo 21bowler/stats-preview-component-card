@@ -42,10 +42,16 @@ body {
 }
 
 /* Image styling */
+.overlay{
+    background-color: var(--accent-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 img{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
+    mix-blend-mode: multiply;
     /* z-index: -1; */
 }
 
@@ -100,6 +106,10 @@ h1{
         border-top-left-radius: 10px;
         border-bottom-right-radius: 0;
 
+    }
+    .overlay{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
     }
 
     .elements{
